@@ -1,0 +1,19 @@
+[color]
+	ui = auto
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[user]
+	email = dk77.yun@samsung.com
+	name = dk77.yun
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
+	vimdiff = difftool
+[http]
+	sslVerify = no
+	sslVerify = no
