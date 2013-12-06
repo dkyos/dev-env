@@ -55,6 +55,20 @@ map <Right> <C-w>l
 map <C-w>m :res 1000<CR>:vertical res 1000<CR>
 set wmw=10
 
+"---------------------------------------------------------------------
+" Keymap configuration for switching file buffer
+"---------------------------------------------------------------------
+map ,1 :b!1<cr>     " switch to file buffer #1
+map ,2 :b!2<cr>     " switch to file buffer #2
+map ,3 :b!3<cr>
+map ,4 :b!4<cr>
+map ,5 :b!5<cr>
+map ,6 :b!6<cr>
+map ,7 :b!7<cr>
+map ,8 :b!8<cr>
+map ,9 :b!9<cr>
+map ,0 :b!10<cr>    " switch to file buffer #10
+map ,w :bw<cr>      " close current file buffer
 
 
 colorscheme evening

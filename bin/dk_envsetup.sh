@@ -1021,6 +1021,7 @@ export DEV_LIFE=~/dkyos/dev-env
 
 export PATH=$PATH:$DEV_LIFE/bin
 export PATH=~/bin:$PATH
+export PATH=$PATH:~/depot_tools
 
 rm -f ~/.vimrc 2> /dev/null
 ln -s $DEV_LIFE/bin/_vimrc ~/.vimrc 2> /dev/null
