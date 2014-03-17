@@ -1018,6 +1018,8 @@ export PS1="[\e[0;36m\W\e[m]# "
 #export PATH=$JAVA_HOME/bin:$PATH
 
 export DEV_LIFE=~/dkyos/dev-env
+#export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:~/tizen-sdk-dev/distrb/pkgconfig 
+export PKG_CONFIG_PATH=~/tizen-sdk-dev/distrib/pkgconfig 
 
 export PATH=$PATH:$DEV_LIFE/bin
 export PATH=~/bin:$PATH
