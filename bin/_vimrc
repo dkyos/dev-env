@@ -45,7 +45,7 @@ map <C-w>m :res 1000<CR>:vertical res 1000<CR>
 
 "cscope
 "set csprg=/usr/bin/cscope
-source $HOME/dkyos/dev-env/bin/cscope_maps.vim
+"source $HOME/dkyos/dev-env/bin/cscope_maps.vim
 
 map <Up> <C-w>k
 map <Down> <C-w>j
