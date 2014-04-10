@@ -41,6 +41,22 @@ if has("cscope")
     if filereadable("cscope.out")
         cs add cscope.out  
     " else add the database pointed to by environment variable 
+    elseif filereadable("../cscope.out")
+        cs add ../cscope.out  
+    elseif filereadable("../../cscope.out")
+        cs add ../../cscope.out  
+    elseif filereadable("../../../cscope.out")
+        cs add ../../../cscope.out  
+    elseif filereadable("../../../../cscope.out")
+        cs add ../../../../cscope.out  
+    elseif filereadable("../../../../../cscope.out")
+        cs add ../../../../../cscope.out  
+    elseif filereadable("../../../../../../cscope.out")
+        cs add ../../../../../../cscope.out  
+    elseif filereadable("../../../../../../../cscope.out")
+        cs add ../../../../../../../cscope.out  
+    elseif filereadable("../../../../../../../../cscope.out")
+        cs add ../../../../../../../../cscope.out  
     elseif $CSCOPE_DB != ""
         cs add $CSCOPE_DB
     endif
