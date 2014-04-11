@@ -1010,9 +1010,9 @@ alias mkseek="find . -name '*.mk' | xargs grep -I"
 #export LC_ALL=ko_KR.UTF-8
 
 #[root@minint-2ts07gn:/data/BMT/iozone3_327/src/current]$
-#export PS1="[\u@\h:\e[0;36m\w\e[m]$ " 
+#export PS1="[\u@\h:\e[0;m\w\e[m]$ " 
 #export PS1="[\e[0;36m\w\e[m]# "  
-export PS1="[\e[0;36m\W\e[m]# "  
+export PS1="[\W]# "
 
 #export JAVA_HOME=/usr/lib/jvm/java
 #export PATH=$JAVA_HOME/bin:$PATH
