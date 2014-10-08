@@ -1031,6 +1031,7 @@ ln -s $DEV_LIFE/bin/_gitconfig ~/.gitconfig 2> /dev/null
 mkdir ~/.vim 2> /dev/null
 rm -f ~/.vim/plugin 2> /dev/null
 ln -s $DEV_LIFE/vim_plugin ~/.vim/plugin 2> /dev/null
+export PKG_CONFIG_PATH=~/tizen-sdk-dev/distrib/pkgconfig
 
 # my proxy
 #export http_proxy=http://172.21.80.180:3128
