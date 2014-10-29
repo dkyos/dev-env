@@ -1019,10 +1019,12 @@ export PS1="[\W]# "
 
 export DEV_LIFE=~/dkyos/dev-env
 #export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:~/tizen-sdk-dev/distrb/pkgconfig 
-export PKG_CONFIG_PATH=~/tizen-sdk-dev/distrib/pkgconfig 
+export PKG_CONFIG_PATH=~/tizen-sdk-dev/distrib/lib/pkgconfig
 
 export PATH=$PATH:$DEV_LIFE/bin
 export PATH=~/bin:$PATH
+export PATH=~/:$PATH
+export PATH=/usr/bin:$PATH
 export PATH=$PATH:~/depot_tools
 
 rm -f ~/.vimrc 2> /dev/null

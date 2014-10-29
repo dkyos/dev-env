@@ -9,6 +9,7 @@ set smartindent
 "set textwidth=79 
 set wrap 
 "set nowrapscan 
+set hlsearch
 set nobackup 
 set visualbell 
 set ruler 
