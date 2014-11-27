@@ -14,6 +14,7 @@ set nobackup
 set visualbell 
 set ruler 
 "set tabstop=4 
+set hlsearch
 set ts=4 
 set shiftwidth=4 
 set ic
