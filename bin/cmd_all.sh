@@ -19,8 +19,16 @@ SYSTEMD_LOG="systemd.log_target=console systemd.log_level=debug"
 GST_DEBUG=5 GST_LOG_TARGET=3
 GST_DEBUG=5 GST_LOG_TARGET=3 TV_PLAYER_DEBUG_LEVEL=6 TV_PLAYER_LOG_TARGET=1
 
+recordmydesktop
 
 ssh dk77.yun@217 -p 21722
 sftp -P 21722 dk77.yun@217
 
+
+
+find . -name *.[ch]-print  | xargs wc -l
+
+~/tizen-sdk/tools/ide/bin/tizen build-native --arch arm --compiler llvm --configuration Debug -- ~/workspace/wemail/lib/
+
+~/tizen-sdk/tools/ide/bin/tizen package --type tpk --sign key1 -- /opt/wemail/app/Build
 
