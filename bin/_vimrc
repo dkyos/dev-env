@@ -47,6 +47,9 @@ map <C-h> gT
 map <C-l> gt
 map <F5> :TlistToggle<CR>
 
+"set wmh=50
+"set wmw=50
+map <F8> :res 1000<CR>:vertical res 1000<CR>
 map <C-w>m :res 1000<CR>:vertical res 1000<CR>
 
 "cscope
@@ -57,9 +60,6 @@ map <Up> <C-w>k
 map <Down> <C-w>j
 map <Left> <C-w>h
 map <Right> <C-w>l
-
-map <C-w>m :res 1000<CR>:vertical res 1000<CR>
-set wmw=10
 
 "---------------------------------------------------------------------
 " Keymap configuration for switching file buffer
@@ -75,7 +75,6 @@ map ,8 :b!8<cr>
 map ,9 :b!9<cr>
 map ,0 :b!10<cr>    " switch to file buffer #10
 map ,w :bw<cr>      " close current file buffer
-
 
 colorscheme evening
 
