@@ -76,5 +76,5 @@ map ,9 :b!9<cr>
 map ,0 :b!10<cr>    " switch to file buffer #10
 map ,w :bw<cr>      " close current file buffer
 
-colorscheme evening
-
+"colorscheme evening
+"colorscheme vividchalk
