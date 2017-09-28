@@ -1007,7 +1007,11 @@ unset f
  
 alias seek="find . | xargs grep -I"
 alias mkseek="find . -name '*.mk' | xargs grep -I"
+alias pseek="find . -name '*.py' | xargs grep -I"
+alias pyseek="find . -name '*.py' | xargs grep -I"
 #export LC_ALL=ko_KR.UTF-8
+alias penv="source activate tensorflow"
+alias pyenv="source activate tensorflow"
 
 #[root@minint-2ts07gn:/data/BMT/iozone3_327/src/current]$
 #export PS1="[\u@\h:\e[0;m\w\e[m]$ " 
