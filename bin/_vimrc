@@ -76,5 +76,28 @@ map ,9 :b!9<cr>
 map ,0 :b!10<cr>    " switch to file buffer #10
 map ,w :bw<cr>      " close current file buffer
 
+
+"---------------------------------------------------------------------
+" For python dev
+"---------------------------------------------------------------------
+let python_highlight_all = 1 
+
 "colorscheme evening
 "colorscheme vividchalk
+"colorscheme murphy
+"colorscheme delek
+"colorscheme zellner
+"colorscheme shine
+"colorscheme slate
+"colorscheme torte
+"colorscheme koehler
+"colorscheme evening
+"colorscheme ron
+"colorscheme darkblue
+"colorscheme industry
+"colorscheme desert
+"colorscheme blue
+"colorscheme elflord
+"colorscheme morning
+"colorscheme peachpuff
+colorscheme default
