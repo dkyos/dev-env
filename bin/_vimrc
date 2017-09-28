@@ -83,7 +83,8 @@ map ,w :bw<cr>      " close current file buffer
 let python_highlight_all = 1 
 
 "colorscheme evening
-"colorscheme vividchalk
+"colorscheme evening
+colorscheme vividchalk
 "colorscheme murphy
 "colorscheme delek
 "colorscheme zellner
@@ -100,4 +101,3 @@ let python_highlight_all = 1
 "colorscheme elflord
 "colorscheme morning
 "colorscheme peachpuff
-colorscheme default
