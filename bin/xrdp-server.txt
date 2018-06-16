@@ -1,0 +1,10 @@
+[remote desktop]
+sudo apt-get install xrdp
+sudo apt-get install mate-core mate-desktop-environment mate-notification-daemon
+
+sudo vi /etc/xrdp/startwm.sh
+mate-session
+
+sudo service xrdp restart
+sudo ln -s /usr/lib/nvidia-375/libGLX_indirect.so.0 /usr/lib/x86_64-linux-gnu/libGLX_indirect.so.0
+
