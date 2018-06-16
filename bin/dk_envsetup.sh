@@ -1038,8 +1038,8 @@ cp $DEV_LIFE/bin/vividchalk.vim /usr/share/vim/vim74/colors/vividchalk.vim
 
 addcompletions
 
-alias penv="source ~/anaconda3/bin/activate tensorflow"
-alias 36penv="source ~/anaconda3/bin/activate py36"
+alias penv="source ~/anaconda/bin/activate tensorflow"
+alias 36penv="source ~/anaconda/bin/activate py36"
 
 alias seek="find . | xargs grep -I"
 alias mkseek="find . -name '*.mk' | xargs grep -I"
