@@ -1005,14 +1005,6 @@ do
 done
 unset f
  
-alias seek="find . | xargs grep -I"
-alias mkseek="find . -name '*.mk' | xargs grep -I"
-alias pseek="find . -name '*.py' | xargs grep -I"
-alias pyseek="find . -name '*.py' | xargs grep -I"
-#export LC_ALL=ko_KR.UTF-8
-alias penv="source activate tensorflow"
-alias pyenv="source activate tensorflow"
-
 #[root@minint-2ts07gn:/data/BMT/iozone3_327/src/current]$
 #export PS1="[\u@\h:\e[0;m\w\e[m]$ " 
 #export PS1="[\e[0;36m\w\e[m]# "  
@@ -1028,6 +1020,7 @@ export PATH=~/bin:$PATH
 export PATH=~/:$PATH
 export PATH=/usr/bin:$PATH
 export PATH=$PATH:~/depot_tools
+export PATH="~/anaconda/bin:$PATH"
 
 rm -f ~/.vimrc 2> /dev/null
 ln -s $DEV_LIFE/bin/_vimrc ~/.vimrc 2> /dev/null
@@ -1044,5 +1037,14 @@ cp $DEV_LIFE/bin/vividchalk.vim /usr/share/vim/vim74/colors/vividchalk.vim
 #export HTTPS_PROXY=http://172.21.80.180:3128
 
 addcompletions
+
+alias penv="source ~/anaconda3/bin/activate tensorflow"
+alias 36penv="source ~/anaconda3/bin/activate py36"
+
+alias seek="find . | xargs grep -I"
+alias mkseek="find . -name '*.mk' | xargs grep -I"
+alias pseek="find . -name '*.py' | xargs grep -I"
+alias pyseek="find . -name '*.py' | xargs grep -I"
+#export LC_ALL=ko_KR.UTF-8
 
 
