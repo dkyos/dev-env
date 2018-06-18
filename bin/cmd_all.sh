@@ -4,6 +4,10 @@ scp -p -P 29418 score:hooks/commit-msg .git/hooks
 scp -p -P 29418 review.tizen.org:hooks/commit-msg .git/hooks
 scp -p -P 23418 spin:hooks/commit-msg .git/hooks
 
+
+export all_proxy=http://172.21.101.204:3128/
+
+
 <<<<<<< HEAD
 find . -name *.[ch]-print  | xargs wc -l
 
