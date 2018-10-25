@@ -1031,10 +1031,19 @@ ln -s $DEV_LIFE/vim_plugin ~/.vim/plugin 2> /dev/null
 cp $DEV_LIFE/bin/vividchalk.vim /usr/share/vim/vim74/colors/vividchalk.vim
 
 # my proxy
-#export http_proxy=http://172.21.80.180:3128
-#export https_proxy=http://172.21.80.180:3128
-#export HTTP_PROXY=http://172.21.80.180:3128
-#export HTTPS_PROXY=http://172.21.80.180:3128
+unset ALL_PROXY
+unset all_proxy
+unset ftp_proxy
+unset http_proxy
+unset https_proxy
+unset socks_proxy
+
+#export http_proxy=http://172.21.80.204:3128
+#export https_proxy=http://172.21.80.204:3128
+#export HTTP_PROXY=http://172.21.80.204:3128
+#export HTTPS_PROXY=http://172.21.80.204:3128
+#export ALL_PROXY=socks://172.21.80.204:3128
+#export all_proxy=socks://172.21.80.204:3128
 
 addcompletions
 
@@ -1046,5 +1055,15 @@ alias mkseek="find . -name '*.mk' | xargs grep -I"
 alias pseek="find . -name '*.py' | xargs grep -I"
 alias pyseek="find . -name '*.py' | xargs grep -I"
 #export LC_ALL=ko_KR.UTF-8
+
+export all_proxy=socks://172.21.101.204:3128/
+export ftp_proxy=ftp://172.21.101.204:3128/
+export http_proxy=http://172.21.101.204:3128/
+export https_proxy=https://172.21.101.204:3128/
+export no_proxy=localhost,127.0.0.0/8,::1
+export socks_proxy=socks://172.21.101.204:3128/
+
+# for git hang
+git config --global http.proxy http://172.21.101.204:3128
 
 
