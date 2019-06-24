@@ -1056,13 +1056,6 @@ alias pseek="find . -name '*.py' | xargs grep -I"
 alias pyseek="find . -name '*.py' | xargs grep -I"
 #export LC_ALL=ko_KR.UTF-8
 
-export all_proxy=socks://172.21.101.204:3128/
-export ftp_proxy=ftp://172.21.101.204:3128/
-export http_proxy=http://172.21.101.204:3128/
-export https_proxy=https://172.21.101.204:3128/
-export no_proxy=localhost,127.0.0.0/8,::1
-export socks_proxy=socks://172.21.101.204:3128/
-
 # for git hang
 git config --global http.proxy http://172.21.101.204:3128
 
