@@ -17,4 +17,3 @@
 [http]
 	sslVerify = no
 	sslVerify = no
-	proxy = http://172.21.101.204:3128
