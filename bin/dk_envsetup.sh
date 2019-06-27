@@ -1056,7 +1056,5 @@ alias pseek="find . -name '*.py' | xargs grep -I"
 alias pyseek="find . -name '*.py' | xargs grep -I"
 #export LC_ALL=ko_KR.UTF-8
 
-# for git hang
-git config --global http.proxy http://172.21.101.204:3128
 
 
