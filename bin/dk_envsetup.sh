@@ -1028,7 +1028,7 @@ ln -s $DEV_LIFE/bin/_gitconfig ~/.gitconfig 2> /dev/null
 mkdir ~/.vim 2> /dev/null
 rm -rf ~/.vim/plugin 2> /dev/null
 ln -s $DEV_LIFE/vim_plugin ~/.vim/plugin 2> /dev/null
-cp $DEV_LIFE/bin/vividchalk.vim /usr/share/vim/vim74/colors/vividchalk.vim
+#cp $DEV_LIFE/bin/vividchalk.vim /usr/share/vim/vim74/colors/vividchalk.vim
 
 # my proxy
 unset ALL_PROXY
