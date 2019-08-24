@@ -1,10 +1,70 @@
+set esckeys
+set autoindent
+set bs=2
+set nocp
+
+set ts=4
+set softtabstop=4      " TAB키를 눌렀을때 몇 칸을 이동?
+set tabstop=4          " 하나의 TAB을 몇 칸으로 인식?
+set shiftwidth=4       " <<, >>을 눌렀을 때 몇 칸을 이동?
+set expandtab          " TAB을 space로 인식
+"set noexpandtab       " TAB을 TAB으로 인식
+
+"set cindent
+set smartindent
+"set textwidth=79
+set wrap
+"set nowrapscan
+set hlsearch
+set nobackup
+set visualbell
+set ruler
+set hlsearch
+set ic
+if &term =~ "xterm-debian" || &term =~ "xterm-xfree86"
+
+set t_Co=16
+set t_Sf=^[[3%dm
+set t_Sb=^[[4%dm
+set t_kb=^H
+fixdel
+endif
+if has("syntax")
+syntax on " Default to no syntax highlightning
+endif
+set fileencodings=ucs-bom,utf-8,euc-kr,latin1
+set encoding=utf-8
+set tags=./tags,../tags,../../tags,../../../tags
+set number
+
+map <F1> K
+map <F3> *
+map <F4> #
+map <F9> :tabnew<CR>
+map <F10> :tabnext<CR>
+map <F11> :tabprev<CR>
+map <F12> :tabclose<CR>
+map <C-h> gT
+map <C-l> gt
+map <F5> :TlistToggle<CR>
+
+"set wmh=50
+"set wmw=50
+map <F8> :res 1000<CR>:vertical res 1000<CR>
+map <C-w>m :res 1000<CR>:vertical res 1000<CR>
+
+
+"VI로 소스를 볼 때 CTRL+]로 tag를 따라가고, CTRL+T로 다시 돌아오면된다.
+"cscope 단축키는 CTRL+\ e 혹은 CTRL+\ g를 자주 사용하고 있다.
+"(VI command로 cs find 명령을 직접 사용해도 된다.)
+
 " tag file
 set tags=tags
 
 " cscope
 if has("cscope")
     set csto=0
-    cs add cscope.out
+    "cs add cscope.out
 
     if $CSCOPE_DB != ""
         cs add $CSCOPE_DB
