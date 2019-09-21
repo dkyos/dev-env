@@ -1056,5 +1056,5 @@ alias pseek="find . -name '*.py' | xargs grep -I"
 alias pyseek="find . -name '*.py' | xargs grep -I"
 #export LC_ALL=ko_KR.UTF-8
 
-
+export DOCKER_HOST=localhost:2375
 
